@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style type="text/css">
+    .list {
+        width: 80%;
+        margin: 0 auto;
+        border: 1px solid;
+        overflow: hidden;
+    }
+
+    .list .inner {
+        float: left;
+        border: 1px solid;
+        width: 25%;
+        box-sizing: border-box;
+    }
+
+    .content {  /* 부모 */
+        overflow: hidden;
+    }
+
+    .content .left {
+        float: left;
+    }
+
+    .content .right {
+        float: right;
+    }
+
+    .left .span {
+        display: block;
+    }
+
+    .clear{
+        clear: both;
+    }
+    
+</style>
+<body>
+    <div class="list">
+        <div class="inner">
+            <img src="img/bgimg.png" alt="fish">
+            <div class="content">
+                <div class="left">
+                    <div>좌측</div><!-- display:block으로 요소배치를 바꿈 -->
+                    <div>좌측</div>
+                    <div>좌측</div>
+                    <div>좌측</div>
+                    <div>좌측</div>
+                </div>
+                <div class="right">우측</div>
+                <div class="clear">플롯해제</div>  <!-- clear:both로 float의 영향을 해제 -->
+
+            </div>
+        </div>
+        <div class="inner">
+            <img src="img/bgimg.png" alt="fish">
+        </div>
+        <div class="inner">
+            <img src="img/bgimg.png" alt="fish">
+        </div>
+        <div class="inner">
+            <img src="img/bgimg.png" alt="fish">
+        </div>
+       
+        </div>
+    </div>
+</body>
+</html>
