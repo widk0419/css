@@ -1,0 +1,39 @@
+/* 웹폰트 선언 */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+/*========== 디자인 시작시 전역 설정 ============*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,html {
+    font-family: 'Noto Sans KR',sans-serif;
+    width: 100%;
+    min-width: 320px;
+}
+
+img{
+    max-width: 100%;
+    height: auto ;
+}
+
+input,textarea,button,select {
+
+    /*
+    고유하게 적용되어 있는 form 관련 요소들을 제거해서
+    여러 브라우저에서 동일한 form 관련 태그 디자인이 보이도록 처리
+    */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+}
+
+ul,li,ol,dl {
+    list-style: none;
+}

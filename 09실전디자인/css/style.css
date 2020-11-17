@@ -1,0 +1,145 @@
+
+/*========== form , btn 윤곽 ===========*/
+.form-control { border-radius: 0;}
+.btn {border-radius: 0;}
+/*============ header =============*/
+.my-header {
+    background-color: #263238;
+    position: fixed; /* body 기준으로 헤더고정 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 50; /* z축으로 50 */
+}
+
+.my-header a {
+    color: white;
+    font-size: 15px;
+    
+}
+.navbar {margin-bottom: 0;}
+.navbar-brand {
+  padding: 10px 20px ;
+}
+/* 가상 선택자 요소 색상 변경 */
+.nav>li>a:focus, .nav>li>a:hover {
+  background-color: #304047;
+}
+
+.nav .open>a,
+.nav .open>a:focus,
+.nav .open>a:hover {
+  background-color: #304047;
+}
+
+.navbar-toggle {border-color: white;}
+.navbar-toggle .icon-bar {background-color: white;}
+
+/* ============ footer =============*/
+
+footer {
+    background-color: #263238;
+    color: white;
+    font-size: 13px;
+    padding: 40px 0; /* 위아래 40 좌우 0*/
+    margin-top: 70px; /* footer 바깥 여백 70*/
+  }
+  footer .footer-copyright address {margin-bottom: 0;}
+
+  footer .footer-menu {text-align: right;} /* 부트스트랩의 클래스 text-right 속성으로 */
+
+  footer .footer-menu li{
+    display: inline-block;
+    padding: 0 10px;
+  }
+  footer .footer-menu li a{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+  }
+
+/* ========= banner ==============*/
+
+section {margin-top: 50px;}
+.my-banner {position: relative;}
+      .carousel-control.right,
+      .carousel-control.left {
+        background-image: linear-gradient( 
+        to right,
+        rgba(0,0,0,0)0,
+        rgba(0,0,0,0)100% ) ;
+      }
+
+      .prod-list, .prod-box {
+        display: block; /* 블럭요소 변경 */
+        border: 1px solid #ddd;
+        text-align: center; /* 블럭이나 text 가운데정렬 */
+      }
+      .prod-list,
+      .prod-list > li{
+        padding: 5px; /* 가장 바깥 숨김 박스 패딩 5*/
+      }
+
+      .prod-box {position: relative;}
+      .prod-box .arrow {
+        display: block; /* 높이 넓이를 사용하기 위해 블럭지정 */
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        background-color: #ccc;
+        color: white;
+        opacity: 1;
+      }
+
+      .prod-box .hover {
+        display: block; /* 높이 넓이를 사용하기 위해 블럭지정 */
+        width: 90px;
+        height: 35px;
+        line-height: 35px;
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        background-color: #0096e4;
+        color: white;
+        opacity: 0;
+      }
+
+      .prod-box:hover > .arrow{
+        opacity: 0;
+      }
+      .prod-box:hover > .hover{
+        opacity: 1;
+      }
+      .prod-box:hover {
+        border: 1px solid #0096e4;
+      }
+
+      .prod-content {overflow: hidden;}
+        .prod-content .prod-info {
+            float: left;
+        }
+        .prod-content .prod-price {
+            float: right;
+        }
+        .prod-info > span{
+            display: block;
+        }
+        .prod-img {text-align: center;}
+
+        .prod-color{    /* 숨겨놓은 영역 */
+            margin-top:-20px; 
+            opacity: 0; 
+            transition: opacity 0.5s ease-in-out /* transition(변경할 옵션,주기,변경속도,딜레이초)*/
+        } 
+        .prod-color ul{overflow: hidden;}
+        .prod-color ul li { float: left;}
+
+        .prod-list2:hover > .prod-color{ opacity: 1;}
+
+        /* 페이지네이션 - 버튼 */
+        .text-center {overflow: hidden;}
+        .text-center .ul {margin: 0;}
+        .text-center button {float: right; padding: 4px 12px;}
